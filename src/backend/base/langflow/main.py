@@ -172,9 +172,9 @@ def get_lifespan(*, fix_migration=False, version=None):
 
         # Startup message
         if version:
-            await logger.adebug(f"Starting Langflow v{version}...")
+            await logger.adebug(f"Starting 风脉 v{version}...")
         else:
-            await logger.adebug("Starting Langflow...")
+            await logger.adebug("Starting 风脉...")
 
         sync_flows_from_fs_task = None
         mcp_init_task = None

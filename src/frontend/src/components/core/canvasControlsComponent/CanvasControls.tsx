@@ -21,7 +21,7 @@ import type { AllNodeType } from "@/types/flow";
 import CanvasControlsDropdown from "./CanvasControlsDropdown";
 import HelpDropdown from "./HelpDropdown";
 
-// Delay before the "Try the new Langflow Assistant!" tooltip surfaces, in ms.
+// Delay before the "Try the new WindMeridian Assistant!" tooltip surfaces, in ms.
 // Long enough that an active user mid-task isn't interrupted; short enough
 // that a user who landed on the canvas and paused gets the hint.
 const ONBOARDING_TOOLTIP_DELAY_MS = 10_000;
@@ -186,7 +186,7 @@ const CanvasControls = ({
                     the button reads as "active" alongside the open panel. */}
                 <img
                   src={langflowAssistantIdleIcon}
-                  alt="Langflow Assistant"
+                  alt="WindMeridian Assistant"
                   className={`absolute inset-0 h-full w-full object-cover transition-opacity duration-150 ${
                     assistantSidebarOpen ? "opacity-0" : "group-hover:opacity-0"
                   }`}
@@ -239,7 +239,7 @@ const CanvasControls = ({
               <button
                 type="button"
                 data-testid="assistant-onboarding-open"
-                aria-label="Open Langflow Assistant"
+                aria-label="Open WindMeridian Assistant"
                 className="flex h-4 w-4 shrink-0 items-center justify-center rounded text-foreground transition-colors hover:bg-muted-foreground/10"
                 onClick={handleAssistantClick}
               >
